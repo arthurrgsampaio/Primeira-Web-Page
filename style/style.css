@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #292929;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px 15px;
+}
+
+.logoNavBar {
+  width: 250px;
+  height: auto;
+  min-height: 40px;
+}
+
+.header a {
+  padding: 10px;
+  text-decoration: none;
+  color: whitesmoke;
+  transition: 0.4s;
+  border: 2px solid #f64348;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header a:hover {
+  color: whitesmoke;
+  background-color: #f64348;
+}
+
+.tituloInicial {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.introdutor {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "main-content sideBar-content";
+  padding: 20px;
+  flex: 1 0 auto;
+  gap: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  justify-content: center;
+  grid-area: main-content;
+  font-size: 16px;
+}
+
+.categoryCard {
+  width: 280px;
+  height: 330px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #f5f5f5d7;
+}
+
+.categoryCard:hover {
+  border: 2px solid #292929b9;
+}
+
+.imagemCardMain {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px 10px 0 0;
+}
+
+.textoCategoriaMain {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6px;
+  font-weight: bold;
+}
+
+.descricaoDeCategoriaMain {
+  padding: 6px;
+}
+
+.sideBar-content {
+  background-color: #383838;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  grid-area: sideBar-content;
+  min-width: 300px;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.tituloExtras {
+  justify-content: center;
+  font-size: larger;
+  padding-bottom: 10px;
+}
+
+.sideBarCard {
+  width: 80%;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+
+.sideBarCard:hover {
+  border: 2px solid #fffffff3;
+  cursor: pointer;
+  border-radius: 11px;
+}
+
+.imagemCardSide {
+  width: 100%;
+  /* height: 100%; */
+  border-radius: 10px;
+}
+
+.textoCardSide {
+  padding-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #292929;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px 15px;
+}
+
+.footer img {
+  width: 150px;
+  height: auto;
+}
+
+.footerAnchor {
+  text-decoration: none;
+  color: white;
+  padding-right: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  .gridContainer {
+    grid-template-areas:
+      "main-content"
+      "sideBar-content";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sideBar-content {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  .imagemCardMain {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px 10px 0 0;
+  }
+  .categoryCard {
+    width: 100%;
+    height: 280px;
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .categoryCard {
+    width: 100%;
+    height: 340px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #f5f5f5d7;
+  }
+}
+
+@media (max-width: 335px) {
+  .footer {
+    background-color: #292929;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px 15px;
+  }
+  .footerAnchor {
+    padding-right: 0px;
+  }
+}
